@@ -1,9 +1,7 @@
 const express = require("express");
 
-const app = express();
+const router = express.Router();
 
-const port = process.env.POST || 4000;
-
-app.use(`/`, (req, res) => res.send(`Exercise Four`));
+router.get(`/`, (req, res) => res.send(`Exercise Four`));
 
 module.exports = router;
