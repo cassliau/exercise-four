@@ -9,7 +9,7 @@ const firebase = require("firebase");
 const db = firebase.firestore();
 
 //reference a specific collection
-const blogposts = db.collection("blogposts");
+const blogposts = db.collection("blog posts");
 
 //if there is no ID provided, send this msg
 router.get("/", (req, res) => res.send("No ID provided"));
